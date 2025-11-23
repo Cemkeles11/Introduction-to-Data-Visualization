@@ -29,8 +29,8 @@ To run this dashboard on your local machine:
 
 1.  Clone this repository:
     ```bash
-    git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git)
-    cd YOUR_REPO_NAME
+   git clone [https://github.com/Cemkeles11/Introduction-to-Data-Visualization.git](https://github.com/Cemkeles11/Introduction-to-Data-Visualization.git)
+ cd YOUR_REPO_NAME
     ```
 
 2.  Install the required libraries:
