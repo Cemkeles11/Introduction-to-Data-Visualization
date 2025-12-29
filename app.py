@@ -11,16 +11,13 @@ st.set_page_config(layout="wide", page_title="Küresel Hava Kirliliği Dashboard
 
 @st.cache_data
 def load_data():
-    """
-    Veri setini 'global_air_pollution_data.csv' dosyasından yükler ve temizler.
-    Sütun adlarını kodun beklediği formata dönüştürür.
-    """
+    
     try:
         df = pd.read_csv("global_air_pollution_data.csv")
     except FileNotFoundError:
         st.error(
             "HATA: 'global_air_pollution_data.csv' dosyası bulunamadı. "
-            "Lütfen dosyanın 'app.py' ile aynı klasörde olduğundan emin olun."
+           
         )
         return None
     
@@ -428,4 +425,5 @@ else:
 
 
 st.subheader("Ham Veri Seti (Filtrelenmiş)")
+
 st.dataframe(df_filtered.head(100))
